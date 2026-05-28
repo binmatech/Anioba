@@ -797,7 +797,7 @@ export default function App() {
                       Corporate Headquarters
                     </h4>
                     <p className="text-sm font-semibold text-neutral-800 mt-1 leading-normal font-sans">
-                      Suite 14 & 15, Engineering Plaza, Corporate District, Lagos, Nigeria
+                      5, ifelodun street off sunville school, Ikorodu, Lagos state
                     </p>
                     <p className="text-[11px] text-neutral-405 mt-0.5 font-sans">
                       Fully registered commercial business unit.
