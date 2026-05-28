@@ -161,20 +161,22 @@ export const MaterialRequestForm: React.FC = () => {
       });
     }
 
-    const message = `Hello ANIOBA Multipurpose Enterprise global ltd! I would like to request a price quote for materials.
-    
-*👤 CUSTOMER INFO:*
+    const message = `Hello Anioba Multipurpose Enterprise Global Ltd,
+
+Good day. I came across your business and I would like to make an enquiry about your electrical and plumbing materials/services. Kindly let me know more about your products, pricing, and delivery options.
+
+👤 CLIENT DETAILS:
 - Name: ${fullName || "Dear Client"}
 - Phone: ${phone || "Not specified"}
 - Email: ${email || "Not specified"}
 - Address: ${deliveryAddress || "Not specified"}
-- Project: ${projectType}
-- Handing: ${deliveryOption}
+- Project Focus: ${projectType}
+- Handing Option: ${deliveryOption}
 ${listStr}
-*📝 NOTES:*
+📝 OTHER ENQUIRY DETAILS:
 ${notes || "None"}
 
-Please get back to me with the delivery timelines and cost breakdown.`;
+Thank you, I look forward to your response.`;
 
     return `https://wa.me/2349032791481?text=${encodeURIComponent(message)}`;
   };
