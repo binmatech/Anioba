@@ -165,17 +165,6 @@ export const MaterialRequestForm: React.FC = () => {
 
 Good day. I came across your business and I would like to make an enquiry about your electrical and plumbing materials/services. Kindly let me know more about your products, pricing, and delivery options.
 
-👤 CLIENT DETAILS:
-- Name: ${fullName || "Dear Client"}
-- Phone: ${phone || "Not specified"}
-- Email: ${email || "Not specified"}
-- Address: ${deliveryAddress || "Not specified"}
-- Project Focus: ${projectType}
-- Handing Option: ${deliveryOption}
-${listStr}
-📝 OTHER ENQUIRY DETAILS:
-${notes || "None"}
-
 Thank you, I look forward to your response.`;
 
     return `https://wa.me/2349032791481?text=${encodeURIComponent(message)}`;
