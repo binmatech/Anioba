@@ -77,8 +77,8 @@ export default function App() {
                 ANIOBA
                 <span className="inline-block w-2.5 h-2.5 bg-[#F59E0B] rotate-45" />
               </div>
-              <span className="text-[9px] font-bold text-neutral-500 uppercase tracking-widest font-mono block mt-1">
-                Multipurpose Enterprise
+              <span className="text-[8px] sm:text-[9.5px] font-bold text-neutral-500 uppercase tracking-widest font-mono block mt-1">
+                Multipurpose Enterprise global ltd
               </span>
             </div>
           </button>
@@ -212,7 +212,7 @@ export default function App() {
 
               {/* Subheadline paragraph */}
               <p className="text-sm sm:text-base text-neutral-600 leading-relaxed max-w-2xl font-sans">
-                Anioba Multipurpose Enterprise delivers reliable electrical, solar, construction, and contracting solutions for homes, industries, and commercial projects across structural frameworks.
+                ANIOBA Multipurpose Enterprise global ltd delivers reliable electrical, solar, construction, and contracting solutions for homes, industries, and commercial projects across structural frameworks.
               </p>
 
               {/* Badges / Micro bullet proofs */}
@@ -371,7 +371,7 @@ export default function App() {
               </div>
 
               <p className="text-sm sm:text-base text-neutral-600 leading-relaxed font-sans">
-                Anioba Multipurpose Enterprise provides professional electrical installation, solar setup, construction consulting, and contracting services tailored for residential, commercial, and industrial projects.
+                ANIOBA Multipurpose Enterprise global ltd provides professional electrical installation, solar setup, construction consulting, and contracting services tailored for residential, commercial, and industrial projects.
               </p>
 
               {/* Three key commitments */}
@@ -810,7 +810,7 @@ export default function App() {
                   </p>
                 </div>
                 <a
-                  href="https://wa.me/2348030000000?text=Hello%20Anioba%20Multipurpose%20Enterprise!%20I%20have%20an%20urgent%20project%20inquiry%20and%20would%20like%20to%20discuss."
+                  href="https://wa.me/2348030000000?text=Hello%20ANIOBA%20Multipurpose%20Enterprise%20global%20ltd!%20I%20have%20an%20urgent%20project%20inquiry%20and%20would%20like%20to%20discuss."
                   target="_blank"
                   rel="noreferrer"
                   className="px-4 py-3 bg-[#F59E0B] hover:bg-white text-black hover:text-black rounded-none text-xs font-mono font-extrabold uppercase tracking-widest transition-colors shrink-0 shadow-md"
@@ -857,7 +857,7 @@ export default function App() {
                     <span className="inline-block w-1.5 h-1.5 bg-[#F59E0B]" />
                   </div>
                   <span className="text-[9px] font-extrabold text-neutral-500 uppercase tracking-widest font-mono block mt-1">
-                    Multipurpose
+                    Multipurpose Enterprise global ltd
                   </span>
                 </div>
               </button>
@@ -949,7 +949,7 @@ export default function App() {
           {/* Copyright signature */}
           <div className="mt-12 pt-8 border-t border-neutral-900 flex flex-col md:flex-row justify-between items-center gap-4 text-xs text-neutral-550 font-sans">
             <div>
-              &copy; {new Date().getFullYear()} Anioba Multipurpose Enterprise. All Technical Rights Reserved.
+              &copy; {new Date().getFullYear()} ANIOBA Multipurpose Enterprise global ltd. All Technical Rights Reserved.
             </div>
             <div className="flex gap-4 font-mono text-[9px] uppercase tracking-widest">
               <a href="#about-section" className="hover:text-[#F59E0B] transition-colors font-mono">Privacy Policy</a>

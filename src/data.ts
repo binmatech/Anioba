@@ -191,7 +191,7 @@ export const TESTIMONIALS: Testimonial[] = [
     name: "Dr. Joshua Alao",
     role: "Chief Developer",
     company: "Alao Estates Ltd",
-    quote: "Anioba Multipurpose Enterprise designed and executed our off-grid solar installation for a 16-villa estate. I was structural-engineering inspector on the project, and the cable layout, smart inverter battery bank housing, and total system synchronization were absolutely pristine. A masterclass in technical excellence.",
+    quote: "ANIOBA Multipurpose Enterprise global ltd designed and executed our off-grid solar installation for a 16-villa estate. I was structural-engineering inspector on the project, and the cable layout, smart inverter battery bank housing, and total system synchronization were absolutely pristine. A masterclass in technical excellence.",
     rating: 5,
     avatar: "https://imgur.com/rE9N5Cq.png"
   },
