@@ -253,7 +253,7 @@ export const TESTIMONIALS: Testimonial[] = [
   },
   {
     id: 2,
-    name: "Engr Fatima",
+    name: "Engr Fatima Adeoba",
     role: "Lead Architect",
     company: "Vanguard Designs",
     quote: "We partnered with Anioba on two modern commercial construction sites. Their consultation, soil assessment, concrete structure density tests, and heavy industrial electrical wiring exceeded expectations. Truly outstanding work, on time, and completely transparent with pricing.",
@@ -262,7 +262,7 @@ export const TESTIMONIALS: Testimonial[] = [
   },
   {
     id: 3,
-    name: "Mr. Gregory",
+    name: "Mr. Gregory Thompson",
     role: "Director of Operations",
     company: "Apex Warehousing Systems",
     quote: "Our industrial warehouse required heavy duty wiring, automated switchgears, and power backup. Anioba delivered the hardware supply and installation flawlessly. The load-balancing diagnostics they ran saved us thousands in potential equipment damage. Highly recommended!",
