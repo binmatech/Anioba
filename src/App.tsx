@@ -7,6 +7,7 @@ import { SolarEstimator } from "./components/SolarEstimator";
 import { ProcessSection } from "./components/ProcessSection";
 import { TestimonialCarousel } from "./components/TestimonialCarousel";
 import { QuoteForm } from "./components/QuoteForm";
+import { MaterialRequestForm } from "./components/MaterialRequestForm";
 import { motion } from "motion/react";
 
 export default function App() {
@@ -91,7 +92,8 @@ export default function App() {
               { label: "Services", target: "services-section" },
               { label: "Solar Showcase", target: "solar-section" },
               { label: "Our Blueprint", target: "process-section" },
-              { label: "Client Reviews", target: "testimonials-section" },
+              { label: "Reviews", target: "testimonials-section" },
+              { label: "Materials Desk", target: "materials-request-section" },
             ].map((link) => (
               <button
                 key={link.target}
@@ -106,7 +108,7 @@ export default function App() {
           {/* CTA / Quick contact */}
           <div className="hidden lg:flex items-center gap-3">
             <a
-              href="https://wa.me/2348030000000"
+              href="https://wa.me/2349032791481"
               target="_blank"
               rel="noreferrer"
               className="p-2 bg-neutral-100 hover:bg-[#F59E0B]/15 hover:text-[#F59E0B] text-neutral-600 rounded-none border border-neutral-200 transition-colors duration-200"
@@ -151,6 +153,7 @@ export default function App() {
               { label: "Solar grid dynamic", target: "solar-section" },
               { label: "Timeline process", target: "process-section" },
               { label: "Client reviews", target: "testimonials-section" },
+              { label: "Materials Request Portal", target: "materials-request-section" },
             ].map((link) => (
               <button
                 key={link.target}
@@ -162,7 +165,7 @@ export default function App() {
             ))}
             <div className="pt-2 flex items-center gap-2 border-t border-neutral-100">
               <a
-                href="https://wa.me/2348030000000"
+                href="https://wa.me/2349032791481"
                 target="_blank"
                 rel="noreferrer"
                 className="flex items-center justify-center gap-2 px-4 py-3 bg-neutral-100 hover:bg-[#F59E0B]/10 hover:text-[#F59E0B] text-neutral-800 rounded-none border border-neutral-300 text-xs font-bold font-mono uppercase tracking-wider w-1/2"
@@ -387,7 +390,7 @@ export default function App() {
                   },
                   {
                     title: "Transparent & Accountable Operations",
-                    desc: "No hidden fees or shifting schedule estimates. We run realistic feasibility studies, providing clear itemized invoices so you know exactly where every dollar goes.",
+                    desc: "No hidden fees or shifting schedule estimates. We run realistic feasibility studies, providing clear itemized invoices so you know exactly where every Naira goes.",
                   },
                 ].map((item, idx) => (
                   <div key={idx} className="flex gap-4 p-4 rounded-none bg-neutral-50/70 border border-neutral-200 hover:bg-white hover:border-neutral-350 transition-all duration-150">
@@ -707,6 +710,9 @@ export default function App() {
         </div>
       </section>
 
+      {/* ================= REQUEST MATERIALS SECTION ================= */}
+      <MaterialRequestForm />
+
       {/* ================= CONTACT & ALLOCATION FORM ================= */}
       <section
         id="quote-section"
@@ -744,9 +750,12 @@ export default function App() {
                     <h4 className="text-[9.5px] font-extrabold text-neutral-400 uppercase tracking-widest font-mono">
                       Operations Support Mobile
                     </h4>
-                    <p className="text-sm sm:text-base font-bold text-neutral-800 mt-1">
-                      +234 (0) 803 123 4567
-                    </p>
+                    <a
+                      href="tel:+2349032791481"
+                      className="text-sm sm:text-base font-bold text-neutral-800 hover:text-[#F59E0B] mt-1 block transition-colors"
+                    >
+                      +234 (0) 903 279 1481
+                    </a>
                     <p className="text-[11px] text-neutral-405 mt-0.5 font-sans">
                       Mon - Sat, 8:00 AM - 6:00 PM
                     </p>
@@ -765,10 +774,10 @@ export default function App() {
                       Corporate Contracting Mail
                     </h4>
                     <a
-                      href="mailto:contracting@aniobamultipurpose.com"
+                      href="mailto:aniobagloballtd@zohomail.com"
                       className="text-sm sm:text-base font-bold text-neutral-800 hover:text-[#F59E0B] mt-1 block transition-colors"
                     >
-                      contracting@aniobamultipurpose.com
+                      aniobagloballtd@zohomail.com
                     </a>
                     <p className="text-[11px] text-neutral-405 mt-0.5 font-sans">
                       Typical proposal draft reply within 4 hours.
@@ -810,7 +819,7 @@ export default function App() {
                   </p>
                 </div>
                 <a
-                  href="https://wa.me/2348030000000?text=Hello%20ANIOBA%20Multipurpose%20Enterprise%20global%20ltd!%20I%20have%20an%20urgent%20project%20inquiry%20and%20would%20like%20to%20discuss."
+                  href="https://wa.me/2349032791481?text=Hello%20ANIOBA%20Multipurpose%20Enterprise%20global%20ltd!%20I%20have%20an%20urgent%20project%20inquiry%20and%2520would%252520like%252520to%252520discuss."
                   target="_blank"
                   rel="noreferrer"
                   className="px-4 py-3 bg-[#F59E0B] hover:bg-white text-black hover:text-black rounded-none text-xs font-mono font-extrabold uppercase tracking-widest transition-colors shrink-0 shadow-md"
@@ -913,6 +922,7 @@ export default function App() {
                   { label: "All services", target: "services-section" },
                   { label: "PV Yield Calculator", target: "solar-section" },
                   { label: "Execution timelines", target: "process-section" },
+                  { label: "Request Materials Desk", target: "materials-request-section" },
                   { label: "Contact / Booking desk", target: "quote-section" },
                 ].map((item) => (
                   <li key={item.label} className="hover:text-[#F59E0B] transition-colors">
@@ -939,7 +949,7 @@ export default function App() {
                   Help Desk Email
                 </span>
                 <span className="text-xs font-extrabold text-white block font-mono">
-                  support@anioba.com
+                  aniobagloballtd@zohomail.com
                 </span>
               </div>
             </div>

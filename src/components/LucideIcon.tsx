@@ -27,7 +27,9 @@ import {
   MessageCircle, 
   FileText, 
   ChevronRight, 
-  ChevronLeft
+  ChevronLeft,
+  Home,
+  Eye
 } from "lucide-react";
 
 interface LucideIconProps {
@@ -94,6 +96,10 @@ export const LucideIcon: React.FC<LucideIconProps> = ({ name, className = "", si
       return <ChevronRight className={className} size={size} />;
     case "ChevronLeft":
       return <ChevronLeft className={className} size={size} />;
+    case "Home":
+      return <Home className={className} size={size} />;
+    case "Eye":
+      return <Eye className={className} size={size} />;
     default:
       // Fallback
       return <Zap className={className} size={size} />;

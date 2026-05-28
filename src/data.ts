@@ -70,6 +70,62 @@ export const SERVICES: Service[] = [
       "Superb Finishing & Millwork",
       "Rigorous On-Site Safety Controls"
     ]
+  },
+  {
+    id: 6,
+    title: "Mechanic & Electrical Engineering (M&E)",
+    description: "Full mechanical and electrical installations, high-capacity ventilation, HVAC, industrial piping networks, and load-balanced panel arrays.",
+    detailedDescription: "Our elite M&E engineering division designs and delivers comprehensive industrial mechanical and electrical integration models. This includes building automation systems, complex heavy fluid hydraulic pumps, custom duct routing, commercial fire alarms, and optimized thermal ventilation schematics.",
+    iconName: "Wrench",
+    image: "https://images.unsplash.com/photo-1581092160607-ee22621dd758?auto=format&fit=crop&w=1200&q=80",
+    features: [
+      "Industrial HVAC & Mechanical Cooling Systems",
+      "Heavy Load-Balanced Power Panels & Switchboards",
+      "Plumbing, Sump Pumps & Hydraulic Distribution Networks",
+      "Routine Technical Performance Audits & Safety Certifications"
+    ]
+  },
+  {
+    id: 7,
+    title: "Architectural Drawings & Designs",
+    description: "Custom blueprints, precise CAD drafting, standard 3D structural rendering, architectural plans, and load-bearing calculations.",
+    detailedDescription: "We provide modern architectural drafts customized to your exact spatial and load requirements. Utilizing advanced BIM modeling, we translate initial aesthetic sketches into detailed construction sheets with concrete reinforcement details, scale elevations, and spatial configurations.",
+    iconName: "Compass",
+    image: "https://images.unsplash.com/photo-1503387762-592deb58ef4e?auto=format&fit=crop&w=1200&q=80",
+    features: [
+      "Elite Architectural CAD Blueprints & Renderings",
+      "3D Building Information Modeling (BIM) Renderings",
+      "Structural Steel & Reinforced Concrete Detail Sheets",
+      "Building Code Compliance & Standard Approval Documentation"
+    ]
+  },
+  {
+    id: 8,
+    title: "Real Estate Development",
+    description: "Property planning, secure physical land sourcing, luxury modern finishes, and turnkey commercial & residential asset construction.",
+    detailedDescription: "We identify, secure, and transform premium land corridors into high-yield commercial hubs or residential properties. Anioba manages zoning regulations, executes high-specification luxury finishings, and hands over secure assets with vetted legal titles.",
+    iconName: "Home",
+    image: "https://images.unsplash.com/photo-1560518883-ce09059eeffa?auto=format&fit=crop&w=1200&q=80",
+    features: [
+      "Symmetrical Subdivisions & Commercial Hub Siting",
+      "Legal Title Sourcing, Verification, and Land Acquisition",
+      "Luxury Hand-Finished Custom Residential Units",
+      "Turnkey Mixed-Use Real Estate Developments"
+    ]
+  },
+  {
+    id: 9,
+    title: "Real Estate Supervision & Elite Contracting Services",
+    description: "Professional site supervision, materials quality checking, rigorous progress monitoring, and everything related to elite technical & contracting services.",
+    detailedDescription: "For discerning developers and luxury homeowners, we supervise physical site executions, manage material specifications, inspect concrete slump metrics, and provide overarching contracting administration. Our expert supervision ensures perfect building safety, strict adherence to blueprints, and full alignment with elite technical standards.",
+    iconName: "Eye",
+    image: "https://images.unsplash.com/photo-1541888946425-d81bb19240f5?auto=format&fit=crop&w=1200&q=80",
+    features: [
+      "Continuous On-Site Supervision & Contractor Coordination",
+      "Rigorous Material Stress Testing & Delivery Verification",
+      "Building Code Compliance & Standard Environmental Auditing",
+      "Comprehensive Turnkey Technical & Contracting Project Management"
+    ]
   }
 ];
 

@@ -6,10 +6,10 @@ interface SolarEstimatorProps {
 }
 
 export const SolarEstimator: React.FC<SolarEstimatorProps> = ({ onEstimatorSubmit }) => {
-  const [monthlyBill, setMonthlyBill] = useState<number>(350);
+  const [monthlyBill, setMonthlyBill] = useState<number>(350000);
 
   // Math models
-  const estimatedCapacity = (monthlyBill / 45).toFixed(1); // kW
+  const estimatedCapacity = (monthlyBill / 45000).toFixed(1); // kW
   const estimatedPanels = Math.ceil(parseFloat(estimatedCapacity) * 1000 / 440); // 440W panels
   const tenYearSavings = Math.round(monthlyBill * 12 * 10 * 0.88); // 88% electricity replaced
   const co2Prevented = (parseFloat(estimatedCapacity) * 1.1).toFixed(1); // Tons per year
@@ -46,26 +46,26 @@ export const SolarEstimator: React.FC<SolarEstimatorProps> = ({ onEstimatorSubmi
                 Average Monthly Power Bill
               </label>
               <span className="text-2xl sm:text-3xl font-extrabold font-display text-[#F59E0B]">
-                ${monthlyBill}
+                ₦{monthlyBill.toLocaleString()}
               </span>
             </div>
 
             <div className="relative font-mono">
               <input
                 type="range"
-                min="50"
-                max="2500"
-                step="25"
+                min="50000"
+                max="2500000"
+                step="25000"
                 value={monthlyBill}
                 onChange={(e) => setMonthlyBill(parseInt(e.target.value))}
                 className="w-full h-1 bg-neutral-800 appearance-none cursor-ew-resize accent-[#F59E0B]"
               />
               <div className="flex justify-between text-[10px] text-neutral-500 font-mono mt-2">
-                <span>$50</span>
-                <span>$500</span>
-                <span>$1,000</span>
-                <span>$1,500</span>
-                <span>$2,500</span>
+                <span>₦50k</span>
+                <span>₦500k</span>
+                <span>₦1.0M</span>
+                <span>₦1.5M</span>
+                <span>₦2.5M</span>
               </div>
             </div>
 
@@ -117,7 +117,7 @@ export const SolarEstimator: React.FC<SolarEstimatorProps> = ({ onEstimatorSubmi
                 10-Year Grid Offset
               </p>
               <h4 className="text-xl sm:text-2xl font-extrabold font-display text-[#F59E0B] mt-1">
-                ${tenYearSavings.toLocaleString()}
+                ₦{tenYearSavings.toLocaleString()}
               </h4>
               <p className="text-[10px] text-emerald-400 font-semibold font-mono mt-1 uppercase">
                 Active bill shield
@@ -149,7 +149,7 @@ export const SolarEstimator: React.FC<SolarEstimatorProps> = ({ onEstimatorSubmi
           </p>
           <button
             onClick={() => {
-              onEstimatorSubmit(`Solar System Calculator Estimate: Requested PV Capacity of ${estimatedCapacity} kW (${estimatedPanels} panels) based on estimated monthly electric bill of $${monthlyBill}`);
+              onEstimatorSubmit(`Solar System Calculator Estimate: Requested PV Capacity of ${estimatedCapacity} kW (${estimatedPanels} panels) based on estimated monthly electric bill of ₦${monthlyBill.toLocaleString()}`);
             }}
             className="px-6 py-3 bg-[#F59E0B] text-neutral-950 text-xs font-mono font-bold uppercase tracking-widest rounded-none hover:bg-white hover:text-black transition-all duration-300 shadow-md shrink-0 flex items-center gap-2 cursor-pointer"
           >
