@@ -1,0 +1,55 @@
+@import url('https://fonts.googleapis.com/css2?family=Sora:wght@300;400;500;600;700;800&family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&family=Fira+Code:wght@400;500&display=swap');
+@import "tailwindcss";
+
+@theme {
+  --font-sans: "Plus Jakarta Sans", "Inter", ui-sans-serif, system-ui, sans-serif;
+  --font-display: "Sora", sans-serif;
+  --font-mono: "Fira Code", ui-monospace, SFMono-Regular, monospace;
+
+  --color-brand-orange: #F59E0B;
+  --color-brand-amber: #F59E0B;
+  --color-brand-dark: #0A0A0A;
+  --color-brand-charcoal: #111111;
+  --color-brand-gold: #D97706;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: var(--font-sans);
+  background-color: #F9FAFB;
+  color: #0A0A0A;
+  overflow-x: hidden;
+}
+
+/* Custom scrollbar matching Geometric Balance theme */
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+::-webkit-scrollbar-track {
+  background: #0A0A0A;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #262626;
+  border: 2px solid #0A0A0A;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #F59E0B;
+}
+
+/* Custom background pattern */
+.dot-matrix-bg {
+  background-image: radial-gradient(#0A0A0A 1px, transparent 0);
+  background-size: 24px 24px;
+}
+
+.dot-matrix-bg-white {
+  background-image: radial-gradient(rgba(255, 255, 255, 0.08) 1px, transparent 0);
+  background-size: 24px 24px;
+}
+
