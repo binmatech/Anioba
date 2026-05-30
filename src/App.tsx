@@ -1,6 +1,6 @@
 import { useState, useEffect } from "react";
 import { Service } from "./types";
-import { SERVICES, STATS, WHY_CHOOSE_US } from "./data";
+import { SERVICES, STATS, WHY_CHOOSE_US, FOUNDERS } from "./data";
 import { LucideIcon } from "./components/LucideIcon";
 import { ServiceModal } from "./components/ServiceModal";
 import { SolarEstimator } from "./components/SolarEstimator";
@@ -425,6 +425,121 @@ export default function App() {
             </div>
 
           </div>
+
+          {/* ================= MISSION & VISION ================= */}
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-8 mt-16 pt-16 border-t border-neutral-200" id="mission-vision">
+            
+            {/* Mission Card */}
+            <div className="p-6 sm:p-8 bg-neutral-50 border-l-4 border-[#F59E0B] border-y border-r border-neutral-250 relative group overflow-hidden" id="mission-statement">
+              <div className="absolute top-0 right-0 w-24 h-24 bg-neutral-100/50 rounded-none rotate-45 translate-x-12 -translate-y-12 -z-10 transition-transform group-hover:scale-110 duration-300" />
+              <div className="flex items-start gap-4">
+                <div className="p-3 bg-[#0A0A0A] text-[#F59E0B] rounded-none rotate-45 flex items-center justify-center shrink-0">
+                  <div className="-rotate-45">
+                    <LucideIcon name="Award" size={20} />
+                  </div>
+                </div>
+                <div>
+                  <h3 className="text-lg font-extrabold font-display text-neutral-900 uppercase tracking-tight">
+                    Our Mission
+                  </h3>
+                  <p className="text-xs font-semibold text-[#F59E0B] uppercase font-mono tracking-wider mt-1">
+                    Engineered for Absolute Integrity
+                  </p>
+                  <p className="text-sm text-neutral-600 mt-3 leading-relaxed font-sans">
+                    To supply premium materials, design bulletproof solar networks, and deliver elite site contracting with absolute transparency, safety code audits, and certified craftsmanship that stands the test of generations.
+                  </p>
+                </div>
+              </div>
+            </div>
+
+            {/* Vision Card */}
+            <div className="p-6 sm:p-8 bg-neutral-50 border-l-4 border-[#0A0A0A] border-y border-r border-neutral-250 relative group overflow-hidden" id="vision-statement">
+              <div className="absolute top-0 right-0 w-24 h-24 bg-neutral-100/50 rounded-none rotate-45 translate-x-12 -translate-y-12 -z-10 transition-transform group-hover:scale-110 duration-300" />
+              <div className="flex items-start gap-4">
+                <div className="p-3 bg-neutral-200 text-[#0A0A0A] border border-neutral-300 rounded-none rotate-45 flex items-center justify-center shrink-0">
+                  <div className="-rotate-45">
+                    <LucideIcon name="Compass" size={20} />
+                  </div>
+                </div>
+                <div>
+                  <h3 className="text-lg font-extrabold font-display text-neutral-900 uppercase tracking-tight">
+                    Our Vision
+                  </h3>
+                  <p className="text-xs font-semibold text-neutral-500 uppercase font-mono tracking-wider mt-1">
+                    Pioneering Next-Gen Power
+                  </p>
+                  <p className="text-sm text-neutral-600 mt-3 leading-relaxed font-sans">
+                    To be recognized as Nigeria's most trusted multipurpose engineering partner, setting ultimate benchmarks in renewable energy deployment, architectural drafting, and safe real-estate development.
+                  </p>
+                </div>
+              </div>
+            </div>
+
+          </div>
+
+          {/* ================= GROUP FOUNDERS DEVELOPMENT ================= */}
+          <div className="mt-20 pt-16 border-t border-neutral-200" id="founders-showcase">
+            <div className="max-w-3xl space-y-2 mb-12">
+              <span className="text-[10px] font-extrabold text-[#F59E0B] uppercase tracking-widest font-mono">
+                Leadership Directory
+              </span>
+              <h3 className="text-xl sm:text-3xl font-extrabold font-display text-[#0A0A0A] tracking-tight uppercase">
+                The Founders & Executive Directors
+              </h3>
+              <p className="text-xs sm:text-sm text-neutral-500 leading-relaxed font-sans">
+                Our enterprise is steered by industry-hardened professionals committed to uncompromising structural guidelines, logistics operations, and certified electrical compliance.
+              </p>
+            </div>
+
+            <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
+              {FOUNDERS.map((founder) => (
+                <div 
+                  key={founder.id}
+                  className="bg-neutral-50 border border-neutral-200 hover:border-neutral-400 rounded-none p-5 relative group transition-all duration-300 hover:-translate-y-1 flex flex-col justify-between"
+                  id={`founder-${founder.id}`}
+                >
+                  <div>
+                    {/* Founder Photo layout with absolute precision corners */}
+                    <div className="relative aspect-square w-full bg-neutral-250 overflow-hidden mb-5 border border-neutral-300/85">
+                      {/* Blueprint angle grid overlay styling */}
+                      <div className="absolute top-2 left-2 px-2 py-0.5 bg-neutral-900 text-white font-mono text-[8px] font-bold tracking-widest uppercase z-10 opacity-70 group-hover:opacity-100 transition-opacity">
+                        DIRECTOR PROFILE_0{founder.id}
+                      </div>
+                      <img
+                        src={founder.image}
+                        alt={founder.name}
+                        className="w-full h-full object-cover grayscale group-hover:grayscale-0 transition-all duration-500"
+                        referrerPolicy="no-referrer"
+                      />
+                      <div className="absolute inset-x-0 bottom-0 bg-gradient-to-t from-black/85 via-black/40 to-transparent p-4 flex flex-col justify-end h-20">
+                        <p className="text-[9px] font-mono font-bold tracking-widest text-[#F59E0B] uppercase">
+                          ANIOBA BOARD MEMBERS
+                        </p>
+                      </div>
+                    </div>
+
+                    {/* Bio details */}
+                    <h4 className="text-base font-extrabold font-display text-neutral-900 uppercase tracking-tight">
+                      {founder.name}
+                    </h4>
+                    <p className="text-[10px] font-extrabold text-[#F59E0B] uppercase font-mono tracking-wider mt-1">
+                      {founder.designation}
+                    </p>
+                    <p className="text-xs text-neutral-600 mt-3 leading-relaxed font-sans">
+                      {founder.bio}
+                    </p>
+                  </div>
+
+                  {/* Corporate signet seal icon or label */}
+                  <div className="mt-5 pt-4 border-t border-dashed border-neutral-200 flex items-center justify-between text-neutral-400 font-mono text-[9px]">
+                    <span className="font-bold">STATUS: ACTIVE // EXECUTIVE</span>
+                    <LucideIcon name="ShieldCheck" size={12} className="text-[#F59E0B]" />
+                  </div>
+                </div>
+              ))}
+            </div>
+          </div>
+
         </div>
       </section>
 
