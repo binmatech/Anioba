@@ -1,4 +1,4 @@
-import { Service, Testimonial, Stat, WhyChooseUsFeature, ProcessStep } from "./types";
+import { Service, Testimonial, Stat, WhyChooseUsFeature, ProcessStep, Founder } from "./types";
 
 export const SERVICES: Service[] = [
   {
@@ -268,5 +268,29 @@ export const TESTIMONIALS: Testimonial[] = [
     quote: "Our industrial warehouse required heavy duty wiring, automated switchgears, and power backup. Anioba delivered the hardware supply and installation flawlessly. The load-balancing diagnostics they ran saved us thousands in potential equipment damage. Highly recommended!",
     rating: 5,
     avatar: "https://imgur.com/kVqYjby.png"
+  }
+];
+
+export const FOUNDERS: Founder[] = [
+  {
+    id: 1,
+    name: "Alhaji Olawale Anioba",
+    designation: "Founder & Managing Director",
+    image: "https://images.unsplash.com/photo-1560250097-0b93528c311a?auto=format&fit=crop&w=400&h=400&q=80",
+    bio: "A visionary leader with over 15 years of standard-certified expertise in high-voltage electrical procurement, commercial logistics, and heavy infrastructure management. He guides the general strategic trajectory and ensures perfect engineering sourcing."
+  },
+  {
+    id: 2,
+    name: "Engr. Fatima Adeoba",
+    designation: "Co-Founder & Technical Director",
+    image: "https://imgur.com/SIkVcTm.png",
+    bio: "An elite power and structural systems specialist who oversees major mechanical blueprint validations, structural load calculations, and comprehensive safety auditing across all of our sites."
+  },
+  {
+    id: 3,
+    name: "Mr. Gregory Thompson",
+    designation: "Operations Partner & Site Director",
+    image: "https://imgur.com/kVqYjby.png",
+    bio: "A seasoned field operator directing physical site supervision, subcontractor scheduling, dynamic inspections, and turnkey contracting project completions for high-profile developers."
   }
 ];

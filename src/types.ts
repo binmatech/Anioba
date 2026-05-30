@@ -49,3 +49,11 @@ export interface ContactFormData {
   serviceNeeded: string;
   message: string;
 }
+
+export interface Founder {
+  id: number;
+  name: string;
+  designation: string;
+  image: string;
+  bio: string;
+}
